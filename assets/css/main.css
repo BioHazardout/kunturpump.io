@@ -346,7 +346,7 @@ img{
 }
 .nav__link{
     display: flex;
-    flex-direction: column;
+    gap: .5rem;
     align-items: center;
     font-size: 1.2rem;
     color: var(--color-navlink);
