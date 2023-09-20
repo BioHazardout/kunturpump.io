@@ -21,10 +21,13 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
          <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
              
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+         <!-- Scroll Reveal -->
+        <link rel="stylesheet" href="css/scrollreveal.min.js">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/main.css">
@@ -45,12 +48,12 @@
                     <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-constructor nav__icon"></i>Inicio
+                                <i class="uil uil-estate nav__icon"></i>Inicio
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="nosotros.html" class="nav__link">
-                                <i class="uil uil-hard-hat nav__icon"></i>Nosotros
+                                <i class="uil uil-constructor nav__icon"></i>Nosotros
                             </a>
                         </li>
                         <li class="nav__item">
@@ -76,6 +79,8 @@
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
+
+                
                 
                 <div class="nav__btns">     
                     <!--=================CHANGE BUTTON=================-->
@@ -94,68 +99,148 @@
             <!--==================== INICIO ====================-->
             <section class="home" >
   
-                        <div class="home__overflow">
+                        <!-- <div class="home__overflow">
                             <video onloadedmetadata="this.muted=true" autoplay loop>
                                 <source src="assets/video/video2.mp4">
                              </video>
 
                             <div class="home-details">
                                     <div class="home-text">
-                                            <!-- <h4 class="home__subtitle">Tecnología de última generación</h4> -->
+                                           
                                             <h1 class="home__title">Tecnología de Última Generación</h1>
                                     </div>
 
                                     <a href="#contacto" class="button">Conócenos
-                                        <!--  <i class="uil uil-envelope-edit button__icon"></i> -->
+                                        
                                     </a>
                             </div> 
-                         </div>
+                         </div> -->
+                         <div class="home-content">
+                            <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                    <img src="assets/img/bg_home1.jpg" alt="" class="home-img">
+    
+                                                    <div class="home-details">
+                                                            <div class="home-text">
+                                                                    <h1 class="home__title">Investigación Desarrollo e Innovación</h1>
+                                                                    
+                                                            </div>
+                                                            <a href="nosotros.html">
+                                                                <button class="button">Conócenos</button>
+                                                             </a>
+                                                    </div>
+                                            </div>
+    
+                                            <div class="swiper-slide">
+                                                    <img src="assets/img/bg_contacto.jpg" alt="" class="home-img">
+    
+                                                    <div class="home-details">
+                                                            <div class="home-text">
+                                                                    <h1 class="home__title">Apostamos por el Crecimiento de la Industria <br> nacional y regional</h1>
+                                                                    
+                                                            </div>
+    
+                                                            <button class="button">Explore</button>
+                                                    </div>
+                                            </div>
+    
+                                            <div class="swiper-slide">
+                                                    <img src="assets/img/bg_nosotros.jpg" alt="" class="home-img">
+    
+                                                    <div class="home-details">
+                                                            <div class="home-text">
+                                                                    <h1 class="home__title">Making Our coffee with lover.</h1>
+                                                                    
+                                                            </div>
+    
+                                                            <button class="button">Explore</button>
+                                                    </div>
+                                            </div>
+                                    </div>
+    
+                                    <div class="swiper-button-next swiper-navBtn"></div>
+                                    <div class="swiper-button-prev swiper-navBtn"></div>
+                                    <div class="swiper-pagination"></div>
+                            </div>
+                    </div>
 
             </section>
-            
 
-            <!--==================== NOSOTROS ====================-->
-            <section class="about section">
-                <h2 class="section__title">KUNTUR PUMP</h2>
-                <span class="section__subtitle">Somos una empresa peruana lider en su campo.</span>
-                <div class="about__container container grid">
-                    
-
-                    <div class="about__data">
-                        <h3 class="about__subtitle">¿Quienes Somos?</h3>
-                        <p class="about__description">Somos una empresa peruana que diseña y fabrica equipos de movimiento de fluidos densos horizontal y bombeo vertical asi como tambien diseñamos y fabricamos equipos de bombeos personalizados para procesos de trabajo altamente agresivos, guardando las especificaciones técnicas mas estrictas y con tiempos de entrega eficientes.</p>
-
+            <section>
+                <div class="section2">
+                    <div class="soluciones__container container grid">
+                            <div>
+                                
+                            </div>
+                            <div>
+                                <h2 class="soluciones__title container">“Brindamos productos y servicios innovadores para satisfacer tus necesidades”
+                                </h2>
+                            </div>
+                    </div>
+                    <div class="soluciones__container container grid">
                         
-                        <p class="about__description">Contamos con un capital humano de gran experiencia que brindan soluciones técnicas de manera integral en los diversos sistemas para bombeo de pulpa mineral. Nuestro servicios post venta personalizado nos garantia contar con la retroalimentación inmediata que nos permita apoyar a nuestros clientes en tiempo real.
-                        </p>
-                       
-                        <!-- <div class="about__info">
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name"> Años de <br> experiencia</span>
+                        <div class="soluciones__container-box">
+                            <img src="assets/img/soluciones.jpg" alt="" class="soluciones__img soluciones__container-box">
+                            <div class="soluciones__box">
+                                <span class="soluciones__experiencia">Más de 35 años de experiencia</span>
                             </div>
-                            <div>
-                                <span class="about__info-title">52+</span>
-                                <span class="about__info-name">Proyectos <br> terminados</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">18+</span>
-                                <span class="about__info-name">Campañas <br> de trabajo</span>
-                            </div>
-                        </div> -->
+                        </div>
+                        
+                        <div class="soluciones__data">
+                            
 
+                            <div class="soluciones__grid">
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Innovación</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Permanentemente desarrollamos y lanzamos al mercado proyectos de innovación. Además estamos implementando mejoras a nuestro Sistema de Gestión de la Innovación.</span>
+                                </div>
+
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Asesoría técnica</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Le brindamos asesoría especializada, desde el diseño hasta la fabricación de la pieza fundida, incluyendo la selección de la aleación de aluminio de acuerdo a su función.</span>
+                                </div>
+
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Equipo calificado</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Tenemos un equipo experimentado y calificado, y contamos con una cultura de innovación interdisciplinaria.</span>
+                                </div>
+
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Última Tecnología</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Nuestros productos y están hechos a la vanguardia de la tecnología son lo último de la industria metalmecánica.</span>
+                                </div>
+
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Diseño y desarrollo</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Diseñamos y desarrollamos las piezas en trabajo conjunto con nuestros clientes
+                                        .</span>
+                                </div>
+
+                                <div class="soluciones__content">
+                                    <i class="uil uil-estate soluciones__icon"></i><h4 class="soluciones__subtitle">Post-venta con cada cliente</h4>
+                                    <div></div>
+                                    <span class="soluciones__description">Después del desarrollo y fundición de las piezas, hacemos un seguimiento en conjunto con el cliente para garantizar la mejor calidad y servicio.</span>
+                                </div>
+
+                            </div>
+
+                        </div>
                         
                     </div>
-                    <img src="assets/img/foto3.jpg" alt="Empresa Kuntur Pump" class="about__img" loading="lazy">
-                    
                 </div>
-            
-            </section>
 
+            </section>
+            
             <!--==================== VALORES ====================-->
             <section class="advantages section2" id="ventajas">
                 <h2 class="section__title">Nuestro Valores</h2>
-                <span class="section__subtitle">Compartimos nuestro valores con ustedes. </span>
+                <span class="section__subtitle">Guian nuestra cultura organizacional y la relación con nuestros clientes. </span>
                 
                 <div class="ventajas__container grid container">
                     <div class="ventajas__data">
@@ -193,7 +278,7 @@
                         <img src="assets/img/ambiental.jpg" alt="" class="advantages__img">
 
                         <div class="advantages__data">
-                            <h2 class="section__title">Política de Calidad, Medio Ambiente, Seguridad y Salud Nacional</h2>
+                            <h2 class="soluciones__title">Política de Calidad, Medio Ambiente, Seguridad y Salud Nacional</h2>
                             
                             <span class="advantages__description"><b> KUNTUR PUMP S.A.C.</b> ejecuta sus proyectos garantizando la calidad de seguridad, salud ocupacional, proteccioón ambiental con responsabilidad social, que hoy compete a todas las organizaciones.</span>
 

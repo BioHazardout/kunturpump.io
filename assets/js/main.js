@@ -1,4 +1,18 @@
-
+// Swiper js
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    // grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
 /*===== MOVER IMAGENES =====*/
 
 document.addEventListener('mousemove', move);
@@ -87,69 +101,9 @@ tabs.forEach(tab =>{
     })
 })
 
-/*==================== CHARACTER SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".features__container", {
-    cssMode: true,
-    loop:true,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-    },
-  });
 
 
-  const optionMenu = document.querySelector(".select-menu"),
-       selectBtn = optionMenu.querySelector(".select-btn"),
-       options = optionMenu.querySelectorAll(".option"),
-       sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));       
-
-options.forEach(option =>{
-    option.addEventListener("click", ()=>{
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
-        optionMenu.classList.remove("active");
-    })
-})
- 
-
-/* Link active portfolio */ 
-const linkPortfolio = document.querySelectorAll(".portfolio__item");
-
-function activePortfolio(){
-     if(linkPortfolio){
-         linkPortfolio.forEach(l => l.classList.remove("active-portfolio"))
-         this.classList.add("active-portfolio")
-
-     }
- }
- linkPortfolio.forEach(l => l.addEventListener("click", activePortfolio))
-
-
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-    loop:true,
-    grabCursor:true,
-    spaceBetween:48,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-      dynamicBullets:true,
-    },
-    breakpoints:{
-        568:{
-            slidesPerView:2,
-        }
-    }
-  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
@@ -205,7 +159,7 @@ window.addEventListener('scroll', scrollUp)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 
 
-ScrollReveal().reveal('.home__data,.home__img, .home__social, .home-details, .footer__copy', { origin: 'top',distance: '40px',duration: 2500,reset: false }),
+ScrollReveal().reveal('.home__data,.home__img, .home__social, .footer__copy', { origin: 'top',distance: '40px',duration: 2500,reset: false }),
 {
         interval: 100
     }
@@ -223,9 +177,9 @@ const sr = ScrollReveal({
   })
   
   sr.reveal(`.section__title, .section__subtitle, .section__description, .home__scroll, .banner__img, 
-  .footer__container, .footer-links, .footer__seven, .process__firma`, {interval:100,})
+  .footer__container, .footer-links, .footer__seven, .process__firma, .soluciones__title, .soluciones__img`, {interval:100,})
 
 sr.reveal(`.benefies__data, .menu-items, .about__data, .skills__container, .methodology__container ,.features__container, .proyect, .services__container , .contact__container, .portfolio__container, .testimonial__container, .ventajas__container, .process__container` , {origin: 'bottom'})
-sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info`, {origin: 'bottom'})
+sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box`, {origin: 'bottom'})
 
 
