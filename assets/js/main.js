@@ -12,6 +12,33 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  /*=============== SWIPER JS ===============*/
+let swiperCards = new Swiper(".card__content", {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+    breakpoints:{
+      600: {
+        slidesPerView: 2,
+      },
+      968: {
+        slidesPerView: 3,
+      },
+    },
+  });
   
 /*===== MOVER IMAGENES =====*/
 
@@ -169,6 +196,7 @@ ScrollReveal().reveal('.home__data,.home__img, .home__social, .footer__copy', { 
 gsap.from('.nav__logo' , {opacity: 0, duration: .8, delay:1, y: 10, })
 gsap.from('.nav__item', {opacity: 0, duration: .8, delay: 1, y: 30, stagger: 0.2,})
 
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '40px',
@@ -180,6 +208,6 @@ const sr = ScrollReveal({
   .footer__container, .footer-links, .footer__seven, .process__firma, .soluciones__title, .soluciones__img`, {interval:100,})
 
 sr.reveal(`.benefies__data, .menu-items, .about__data, .skills__container, .methodology__container ,.features__container, .proyect, .services__container , .contact__container, .portfolio__container, .testimonial__container, .ventajas__container, .process__container` , {origin: 'bottom'})
-sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box`, {origin: 'bottom'})
+sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box, .sponsor__container, .product__container`, {origin: 'bottom'})
 
 
