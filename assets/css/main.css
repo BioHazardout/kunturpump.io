@@ -1961,6 +1961,20 @@ grid-template-columns: 1fr 9fr;
     filter: invert(0.1);
     transition: .5s;
   }
+  /*==================== PIE DE PAGINA ====================*/
+  .noticias__container{
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-items: center;
+    row-gap: 3.5rem;
+    padding-top: 3rem;
+  }
+  .noticias__content {
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }   
+  
+  
   
 
 /*==================== PIE DE PAGINA ====================*/
