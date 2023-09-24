@@ -87,48 +87,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
-/*==================== ACCORDION SKILLS ====================*/
-
-const skillsContent = document.getElementsByClassName("skills__content"),
-      skillsHeader = document.querySelectorAll(".skills__header")
-
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-
-    for(i = 0; i < skillsContent.length; i++){
-        skillsContent[i].className = "skills__content skills__close"
-    }
-    if(itemClass === "skills__content skills__close"){
-        this.parentNode.className = "skills__content skills__open"
-
-    }
-}
-skillsHeader.forEach((el) =>{
-    el.addEventListener("click", toggleSkills)
-})
-
-/*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll("[data-target]"),
-        tabContents = document.querySelectorAll("[data-content]")
-
-tabs.forEach(tab =>{
-    tab.addEventListener("click", ()=>{
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove("methodology__active")
-        })
-
-        target.classList.add("methodology__active")
-
-        tabs.forEach(tab =>{
-            tab.classList.remove("methodology__active")
-        })
-        tab.classList.add("methodology__active")
-    })
-})
-
-
 
 
 
@@ -144,11 +102,7 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
+       
     })
 }
 window.addEventListener('scroll', scrollActive)
@@ -163,7 +117,7 @@ window.addEventListener("scroll", () => {
     }
   })  
 
-
+  
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
@@ -197,6 +151,7 @@ gsap.from('.nav__logo' , {opacity: 0, duration: .8, delay:1, y: 10, })
 gsap.from('.nav__item', {opacity: 0, duration: .8, delay: 1, y: 30, stagger: 0.2,})
 
 
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '40px',
@@ -208,6 +163,6 @@ const sr = ScrollReveal({
   .footer__container, .footer-links, .footer__seven, .process__firma, .soluciones__title, .soluciones__img`, {interval:100,})
 
 sr.reveal(`.benefies__data, .menu-items, .about__data, .skills__container, .methodology__container ,.features__container, .proyect, .services__container , .contact__container, .portfolio__container, .testimonial__container, .ventajas__container, .process__container` , {origin: 'bottom'})
-sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box, .sponsor__container, .product__container`, {origin: 'bottom'})
+sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box, .sponsor__container, .product__container, .noticias__container, .project__title, .project__description , .video__content, .project__button`, {origin: 'bottom'})
 
 
