@@ -1922,13 +1922,21 @@ grid-template-columns: 1fr 9fr;
 }
 .footer__links{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     row-gap: 1.5rem;
 }
 .footer__link-grey{
-    color: var(--text-color-light);
+    color: white;
+    font-size: 1.05rem;
+    cursor: pointer;
 }
+
 .footer__link{
+    color: #bebebe;
+    font-size: var(--smaller-font-size);
+    cursor: pointer;
+}
+.footer__link-great{
     color: #bebebe;
     font-size: var(--smaller-font-size);
     cursor: pointer;
@@ -2723,7 +2731,7 @@ grid-template-columns: 1fr 9fr;
         grid-template-columns:1fr 4fr 1fr;
     }
     .footer__links{
-        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-columns: 2fr 2fr 4fr 3fr ;
     }
     .footer__bg{
         padding: 3rem 0 3.5rem;
