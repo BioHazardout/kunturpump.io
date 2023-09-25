@@ -85,10 +85,29 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*==================== DETALLES MODAL ====================*/
 
+const modalViews = document.querySelectorAll(".detail__modal"),
+    modalBtns = document.querySelectorAll(".detail__button"),
+    modalCloses = document.querySelectorAll(".button__modal-close")
 
+let modal = function (modalClick) {
+    modalViews[modalClick].classList.add("active-modal")
+}
 
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener("click", () => {
+        modal(i)
+    })
+})
 
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener("click", () => {
+        modalViews.forEach((modalView) => {
+            modalView.classList.remove("active-modal")
+        })
+    })
+})
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
