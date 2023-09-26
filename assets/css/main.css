@@ -1001,11 +1001,15 @@ display: grid;
 grid-template-columns: 1fr 9fr;
 }
 .process__icon{
-    padding: 0 .5rem;
-    font-size: 5rem;
+    padding-right: .3rem;
+
 }
 .process__title{
     color: var(--process-text);
+    
+}
+.process__subtitle{
+    padding-bottom: 1rem;
 }
 .process__firma{
     display: block;
@@ -1369,6 +1373,10 @@ grid-template-columns: 1fr 9fr;
     place-items: center;
     
 }
+.detail__container{
+    display: grid;
+    place-items: center;
+}
 .detail__modal{
     position: fixed;
     top: 0;
@@ -1427,6 +1435,7 @@ grid-template-columns: 1fr 9fr;
   .detail__modal-data{
     display: grid;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .detail__modal-title{
@@ -1459,10 +1468,13 @@ grid-template-columns: 1fr 9fr;
     margin: 3rem 0 5rem 0;
   }
   .modal__img-1280{
-    
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 2rem 0 2rem 0;
+  }
+  .modal__img-1280 div img{
+    width: 280px;
   }
   .detail__buttons{
     display: flex;
@@ -1557,20 +1569,7 @@ grid-template-columns: 1fr 9fr;
 }
 .project{
     position: relative;
-    background-image: url(../img/video_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    height:25rem;
-
-    text-align: center;
-    overflow: hidden;
-    z-index: 1;
-}
-.project2{
-    position: relative;
-    background-image: url(../img/video_bg2.jpg);
+    background-image: url(../img/video_bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1602,7 +1601,7 @@ grid-template-columns: 1fr 9fr;
 .project__noticias{
     margin-bottom: 3rem;
 }
-/*============== PLACES ===============*/
+/*============== PRODUCTOS ===============*/
 .product__card, .product__img {
     height: 400px;
   }
@@ -1618,6 +1617,7 @@ grid-template-columns: 1fr 9fr;
   .product__card {
     position: relative;
     overflow: var(--img-hidden);
+    max-width: 286px;
   }
   
   .product__card:hover .product__img {
@@ -1805,7 +1805,7 @@ grid-template-columns: 1fr 9fr;
 .noticias__container-bx{
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
     gap: 2rem;
     padding-top: 3rem;
@@ -2660,7 +2660,7 @@ grid-template-columns: 1fr 9fr;
     }
     
     .detail__modal-body{
-        padding: 0 4rem 4rem 4rem;
+        padding: 0 4rem 2rem 4rem;
     }
     .detail__modal-title{
         font-size: 1.8rem;
@@ -2743,7 +2743,6 @@ grid-template-columns: 1fr 9fr;
         font-size: 1.1rem;
     }
       
-    
     .header,
     .advantages,
     .benefies,
@@ -2875,7 +2874,7 @@ grid-template-columns: 1fr 9fr;
         grid-template-columns: repeat(3,1fr);
       }
       .detail__description{
-        font-size: 1.15em;
+        font-size: 1em;
       }
       .sponsor__container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
