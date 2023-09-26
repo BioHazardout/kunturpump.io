@@ -1977,12 +1977,15 @@ grid-template-columns: 1fr 9fr;
 }
 .footer__seven{
     display: block;
-    width: 70px;
+    width: 80px;
     margin-left: auto;
     margin-right: auto;
     padding-top: .8rem;
-    
   }
+.footer__seven:hover .seven__color{
+  fill: #f92121;
+  transition: .3s;
+}
 
 /*========== SCROLL UP ==========*/
 .scrollup{
