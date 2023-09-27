@@ -1473,9 +1473,10 @@ grid-template-columns: 1fr 9fr;
     align-items: center;
     margin: 2rem 0 2rem 0;
   }
-  .modal__img-1280 div img{
+  .modal__img-1280 div .product__modal{
     width: 280px;
   }
+  
   .detail__buttons{
     display: flex;
     justify-content: center;
@@ -2110,6 +2111,9 @@ grid-template-columns: 1fr 9fr;
     }
     .methodology__content-img{
         order: 1;
+    }
+    .modal__img-1280{
+        display: block;
     }
     
 }

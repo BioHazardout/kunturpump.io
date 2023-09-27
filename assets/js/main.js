@@ -182,6 +182,6 @@ const sr = ScrollReveal({
   .footer__container, .footer-links, .footer__seven, .process__firma, .soluciones__title, .soluciones__img`, {interval:100,})
 
 sr.reveal(`.benefies__data, .menu-items, .about__data, .skills__container, .methodology__container ,.features__container, .proyect, .services__container , .contact__container, .portfolio__container, .testimonial__container, .ventajas__container, .process__container` , {origin: 'bottom'})
-sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box, .sponsor__container, .product__container, .noticias__container, .project__title, .project__description , .video__content, .project__button`, {origin: 'bottom'})
+sr.reveal(`.benefies__img, .time-table, .about__img, .advantages__description,.advantages__img, .advantages__subtitle, .advantages__info, .soluciones__data, .soluciones__box, .sponsor__container, .product__container, .noticias__container, .project__title, .project__description , .video__content, .project__button, .detail__container,`, {origin: 'bottom'})
 
 
