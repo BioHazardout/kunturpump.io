@@ -166,7 +166,7 @@ ScrollReveal().reveal('.home__data,.home__img, .home__social, .footer__copy', { 
 
 /*===== GSAP ANIMATION =====*/
 // NAV
-gsap.from('.nav__logo' , {opacity: 0, duration: .8, delay:1, y: 10, })
+gsap.from('.header__logo' , {opacity: 0, duration: .8, delay:1, y: 10, })
 gsap.from('.nav__item', {opacity: 0, duration: .8, delay: 1, y: 30, stagger: 0.2,})
 
 

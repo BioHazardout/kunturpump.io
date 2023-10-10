@@ -1472,6 +1472,7 @@ grid-template-columns: 1fr 9fr;
     justify-content: center;
     align-items: center;
     margin: 2rem 0 2rem 0;
+    gap: 1rem;
   }
   .modal__img-1280 div .product__modal{
     width: 280px;
